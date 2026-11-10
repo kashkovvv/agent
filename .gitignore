@@ -1,0 +1,18 @@
+# Виртуальное окружение
+.venv/
+
+# Секреты
+.env
+
+# Служебные файлы Python
+__pycache__/
+*.egg-info/
+
+# Кэши инструментов
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Результаты прогонов и кэш ответов моделей
+evals/results/
+evals/cache/

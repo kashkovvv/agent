@@ -1,0 +1,14 @@
+[project]
+name = "agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["openai", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+include = ["agent*", "skills*", "evals*"]
+
+[tool.ruff]
+line-length = 100
