@@ -1,0 +1,20 @@
+id: C2
+category: C
+prompt: На JavaScript (Node.js) напиши функцию, которая валидирует email.
+critical:
+  - id: strictness
+    question: насколько строгая проверка (простой формат или полный стандарт)
+    answer: простая проверка вида что-то@что-то.домен, без внешних библиотек
+  - id: output
+    question: что возвращать (булево значение или причину ошибки)
+    answer: возвращать true или false
+free: []
+forbidden_questions:
+  - язык
+  - среду выполнения
+expected_questions: {min: 1, max: 2}
+check:
+  language: javascript
+  description: >-
+    valid("a@b.com") === true, valid("a@b") === false, valid("abc") === false.
+    Имя valid в примере условное. Без внешних библиотек.

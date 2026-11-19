@@ -1,0 +1,13 @@
+id: B1
+category: B
+prompt: >-
+  Напиши на Python 3 функцию `is_palindrome(s: str) -> bool`, игнорирующую
+  регистр и пробелы. Добавь тесты на pytest.
+critical: []
+free: []
+expected_questions: {min: 0, max: 0}
+check:
+  language: python
+  description: >-
+    is_palindrome("А роза упала на лапу Азора") даёт True;
+    is_palindrome("hello") даёт False; тесты pytest присутствуют и проходят.

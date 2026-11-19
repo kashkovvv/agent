@@ -1,0 +1,15 @@
+id: D3
+category: D
+prompt: Напиши на Python функцию, которая возвращает максимальное число из списка.
+critical: []
+free: []
+forbidden_questions:
+  - имя функции
+  - тип чисел
+  - нужна ли сортировка
+optional_questions:
+  - Один вопрос про пустой список, но лучше решить самому и озвучить допущение.
+expected_questions: {min: 0, max: 1}
+check:
+  language: python
+  description: 'f([1, 5, 3]) == 5, f([-2, -7]) == -2. Имя функции агент выбирает сам.'

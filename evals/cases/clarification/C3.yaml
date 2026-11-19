@@ -1,0 +1,23 @@
+id: C3
+category: C
+prompt: Напиши на Java класс Stack на основе массива.
+critical:
+  - id: capacity
+    question: фиксированная или растущая ёмкость
+    answer: ёмкость растёт автоматически
+  - id: empty_pop
+    question: поведение pop на пустом стеке (исключение или null)
+    answer: на пустом стеке pop бросает исключение
+  - id: element_type
+    question: какого типа элементы (int или обобщённый тип)
+    answer: элементы типа int
+free: []
+forbidden_questions:
+  - язык
+  - названия методов (push, pop, peek)
+expected_questions: {min: 2, max: 3}
+check:
+  language: java
+  description: >-
+    После push(1), push(2) вызов pop() даёт 2; pop() на пустом стеке бросает
+    исключение; можно положить больше 100 элементов.

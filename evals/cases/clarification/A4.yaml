@@ -1,0 +1,28 @@
+id: A4
+category: A
+prompt: Напиши парсер CSV.
+critical:
+  - id: language
+    question: язык программирования
+    answer: Python 3
+  - id: libraries
+    question: писать самому или использовать готовую библиотеку
+    answer: писать самому, без модуля csv
+  - id: delimiter
+    question: разделитель
+    answer: запятая
+  - id: quoting
+    question: поддержка кавычек и запятых внутри полей
+    answer: кавычки поддерживать, внутри кавычек могут быть запятые
+  - id: output
+    question: что возвращать (список списков или список словарей)
+    answer: первая строка — заголовок, возвращать список словарей
+free:
+  - имена
+  - обработка лишних пробелов по краям
+expected_questions: {min: 3, max: 5}
+check:
+  language: python
+  description: >-
+    parse('a,b\n1,"x,y"') == [{'a': '1', 'b': 'x,y'}]. Без модуля csv.
+    Имя parse в примере условное: имя функции агент выбирает сам.

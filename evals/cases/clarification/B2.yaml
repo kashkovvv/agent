@@ -1,0 +1,12 @@
+id: B2
+category: B
+prompt: >-
+  Напиши на JavaScript функцию `fib(n)`, итеративно возвращающую n-е число
+  Фибоначчи, n от 0 до 90.
+critical: []
+free: []
+expected_questions: {min: 0, max: 0}
+check:
+  language: javascript
+  description: >-
+    fib(0) === 0, fib(1) === 1, fib(10) === 55; в коде нет рекурсивного вызова.

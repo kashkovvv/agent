@@ -1,0 +1,14 @@
+id: D1
+category: D
+prompt: Напиши на Python функцию, которая переворачивает строку.
+critical: []
+free: []
+forbidden_questions:
+  - имя функции
+  - стиль PEP8
+  - докстринги
+  - способ реализации
+expected_questions: {min: 0, max: 0}
+check:
+  language: python
+  description: 'f("abc") == "cba", f("") == "". Имя функции агент выбирает сам.'

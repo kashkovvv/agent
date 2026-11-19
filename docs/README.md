@@ -25,9 +25,8 @@ evals/
   cases/clarification/  тест-кейсы, по файлу на кейс
   run.py                runner: запускает прогоны
   user_sim.py           симулятор пользователя
-  judge.py              судья
+  judge.py              судья: разметка диалога и оценка кода
   metrics.py            подсчёт метрик
-  checks.py             проверка присланного кода
   cache.py              кэш ответов модели
   EXPERIMENTS.md        журнал экспериментов
   results/  cache/      результаты и кэш, в репозиторий не попадают

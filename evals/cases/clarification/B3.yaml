@@ -1,0 +1,12 @@
+id: B3
+category: B
+prompt: >-
+  Напиши на C++ функцию бинарного поиска по отсортированному `vector<int>`,
+  которая возвращает индекс найденного элемента или -1.
+critical: []
+free: []
+expected_questions: {min: 0, max: 0}
+check:
+  language: cpp
+  description: >-
+    На {1,3,5,7} поиск 5 даёт 2, поиск 4 даёт -1; код компилируется.

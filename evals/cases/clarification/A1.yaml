@@ -1,0 +1,26 @@
+id: A1
+category: A
+prompt: Напиши функцию, которая сортирует список.
+critical:
+  - id: language
+    question: язык программирования
+    answer: Python 3
+  - id: element_type
+    question: тип элементов
+    answer: целые числа
+  - id: order
+    question: порядок сортировки (по возрастанию или по убыванию)
+    answer: по возрастанию
+  - id: mutation
+    question: на месте или возвращать новый список
+    answer: возвращает новый список, исходный не меняется
+free:
+  - имя функции
+  - алгоритм сортировки
+  - наличие докстринга
+expected_questions: {min: 2, max: 4}
+check:
+  language: python
+  description: >-
+    f([3, 1, 2]) == [1, 2, 3]; исходный список после вызова не изменён;
+    f([]) == []. Имя функции агент выбирает сам.

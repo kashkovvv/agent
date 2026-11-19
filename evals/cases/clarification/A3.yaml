@@ -1,0 +1,25 @@
+id: A3
+category: A
+prompt: Реализуй LRU-кэш.
+critical:
+  - id: language
+    question: язык программирования
+    answer: Python 3, без внешних библиотек
+  - id: interface
+    question: интерфейс (названия и сигнатуры методов, что возвращать при отсутствии ключа)
+    answer: класс LRUCache(capacity) с методами get(key) (возвращает -1, если ключа нет) и put(key, value)
+  - id: capacity
+    question: ёмкость (задаётся при создании или фиксирована)
+    answer: задаётся при создании через аргумент capacity в LRUCache(capacity)
+  - id: thread_safety
+    question: потокобезопасность
+    answer: потокобезопасность не нужна
+free:
+  - структура данных внутри
+  - комментарии
+expected_questions: {min: 3, max: 4}
+check:
+  language: python
+  description: >-
+    capacity=2; put(1,1), put(2,2), get(1)==1, put(3,3), get(2)==-1.
+    Без внешних библиотек.

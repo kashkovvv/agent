@@ -1,0 +1,20 @@
+id: C1
+category: C
+prompt: На Python напиши функцию поиска простых чисел.
+critical:
+  - id: search_target
+    question: "что искать: все простые до N или первые N штук"
+    answer: все простые числа, не превосходящие N; возвращать список
+  - id: performance
+    question: требования к производительности
+    answer: N может быть до миллиона, нужно, чтобы работало быстро (решето)
+free: []
+forbidden_questions:
+  - язык
+  - имя функции
+expected_questions: {min: 1, max: 2}
+check:
+  language: python
+  description: >-
+    f(20) == [2, 3, 5, 7, 11, 13, 17, 19]; f(1_000_000) выполняется
+    быстрее 2 секунд. Имя функции агент выбирает сам.
